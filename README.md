@@ -14,3 +14,5 @@ To get started, simply change the variables in `main.py` to your username and ho
 | <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
 
 <!-- FOLLOWERS_LIST_END -->
+
+Psst, if you follow me you can show up on here! ^-^
