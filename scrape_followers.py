@@ -5,6 +5,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 
 from xpaths_and_css_selectors import *
 
@@ -85,6 +86,8 @@ def setup(link):
     :return: the chrome driver
     """
     global driver
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(options=options)
     driver.get(link)
     driver.implicitly_wait(1)
