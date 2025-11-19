@@ -15,9 +15,16 @@ def scrape_curr_page():
 def scrape_user(user_link):
     driver.get(user_link)
     name = driver.find_element(By.CSS_SELECTOR, username_selector).text
-    followers = driver.find_element(By.CSS_SELECTOR, followers_selector).text
-    profile_pfp_link = driver.find_element(By.CSS_SELECTOR, profile_image_selector).get_attribute("src")
-    return GithubUser()
+    followers_text = driver.find_element(By.CSS_SELECTOR, followers_selector).text.lower()
+    followers = 0
+    if 'k' in followers_text:
+        followers = int(float(followers_text.replace('k', '')) * 1000)
+    elif 'm' in followers_text:
+        followers = int(float(followers_text.replace('m', '')) * 1000000)
+    else:
+        followers = int(followers_text.replace(',', ''))
+    profile_image_link = driver.find_element(By.CSS_SELECTOR, profile_image_selector).get_attribute("src")
+    return GithubUser(name=name, followers=followers, profile_image_link=profile_image_link, link=user_link)
 def get_most_followed(link, num):
     setup(link)
     all_followers = scrape_all_followers()
