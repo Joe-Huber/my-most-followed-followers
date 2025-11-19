@@ -5,6 +5,8 @@ def scrape_all_followers():
     return []
 def scrape_curr_page():
     return 0
+def scrape_user(user_link):
+    return GithubUser()
 def get_most_followed(num):
     all_followers = scrape_all_followers()
     all_followers.sort(key=lambda user: user.followers, reverse=True)
