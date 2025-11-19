@@ -1,3 +1,4 @@
+from datetime import datetime
 from scrape_followers import get_most_followed
 from main import github_followers_link
 
@@ -13,19 +14,33 @@ if __name__ == "__main__":
         table += f"| <img src='{user.profile_image_link}' width='30' height='30'> | [{user.name}]({user.link}) | {user.followers} |\n"
 
     # Use placeholders to insert the table
-    start_placeholder = "<!-- FOLLOWERS_LIST_START -->"
-    end_placeholder = "<!-- FOLLOWERS_LIST_END -->"
+    followers_start_placeholder = "<!-- FOLLOWERS_LIST_START -->"
+    followers_end_placeholder = "<!-- FOLLOWERS_LIST_END -->"
     
-    start_index = readme_content.find(start_placeholder)
-    end_index = readme_content.find(end_placeholder)
+    start_index = readme_content.find(followers_start_placeholder)
+    end_index = readme_content.find(followers_end_placeholder)
 
     if start_index != -1 and end_index != -1:
-        new_readme = (
-            readme_content[:start_index + len(start_placeholder)] +
+        readme_content = (
+            readme_content[:start_index + len(followers_start_placeholder)] +
             "\n" + table + "\n" +
             readme_content[end_index:]
         )
-        with open("README.md", "w") as f:
-            f.write(new_readme)
-    else:
-        print("Placeholders not found in README.md")
+
+    # Update the "Last updated" timestamp
+    last_updated_placeholder_start = "<!-- LAST_UPDATED_START -->"
+    last_updated_placeholder_end = "<!-- LAST_UPDATED_END -->"
+    
+    start_index = readme_content.find(last_updated_placeholder_start)
+    end_index = readme_content.find(last_updated_placeholder_end)
+    
+    if start_index != -1 and end_index != -1:
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        readme_content = (
+            readme_content[:start_index + len(last_updated_placeholder_start)] +
+            f"\n*Last updated: {now}*\n" +
+            readme_content[end_index:]
+        )
+
+    with open("README.md", "w") as f:
+        f.write(readme_content)

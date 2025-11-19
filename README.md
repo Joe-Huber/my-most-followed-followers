@@ -16,3 +16,6 @@ To get started, simply change the variables in `main.py` to your username and ho
 <!-- FOLLOWERS_LIST_END -->
 
 Psst, if you follow me you can show up on here! ^-^
+
+<!-- LAST_UPDATED_START -->
+<!-- LAST_UPDATED_END -->
