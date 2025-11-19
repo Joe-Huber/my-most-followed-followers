@@ -16,6 +16,14 @@ def scrape_curr_page():
     for element in link_elements:
         user_links.append(element.get_attribute('href'))
     return list(set(user_links))
+
+def next_page_exists():
+    try:
+        driver.find_element(By.CSS_SELECTOR, next_follower_page_selector)
+        return True
+    except:
+        return False
+
 def scrape_user(user_link):
     driver.get(user_link)
     name = driver.find_element(By.CSS_SELECTOR, username_selector).text
