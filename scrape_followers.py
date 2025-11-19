@@ -11,7 +11,11 @@ def scrape_all_followers():
     # code here
     return []
 def scrape_curr_page():
-    return 0
+    user_links = []
+    link_elements = driver.find_elements(By.CSS_SELECTOR, "#user-profile-frame > div > div > div.d-table-cell > a")
+    for element in link_elements:
+        user_links.append(element.get_attribute('href'))
+    return list(set(user_links))
 def scrape_user(user_link):
     driver.get(user_link)
     name = driver.find_element(By.CSS_SELECTOR, username_selector).text
