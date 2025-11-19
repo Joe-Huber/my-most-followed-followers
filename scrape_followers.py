@@ -16,7 +16,6 @@ def scrape_user(user_link):
     driver.get(user_link)
     name = driver.find_element(By.CSS_SELECTOR, username_selector).text
     followers_text = driver.find_element(By.CSS_SELECTOR, followers_selector).text.lower()
-    followers = 0
     if 'k' in followers_text:
         followers = int(float(followers_text.replace('k', '')) * 1000)
     elif 'm' in followers_text:
