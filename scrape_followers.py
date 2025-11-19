@@ -4,7 +4,7 @@ from selenium import webdriver
 from xpaths_and_css_selectors import *
 
 from github_user import GithubUser
-driver = None
+
 def scrape_all_followers():
     # code here
     return []
