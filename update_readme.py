@@ -35,10 +35,10 @@ if __name__ == "__main__":
     end_index = readme_content.find(last_updated_placeholder_end)
     
     if start_index != -1 and end_index != -1:
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        now_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
         readme_content = (
             readme_content[:start_index + len(last_updated_placeholder_start)] +
-            f"\n*Last updated: {now}*\n" +
+            f"\n*Last updated: {now_utc} UTC*\n" +
             readme_content[end_index:]
         )
 
