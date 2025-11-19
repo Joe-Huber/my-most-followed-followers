@@ -15,6 +15,8 @@ def scrape_curr_page():
 def scrape_user(user_link):
     driver.get(user_link)
     name = driver.find_element(By.CSS_SELECTOR, username_selector).text
+    followers = driver.find_element(By.CSS_SELECTOR, followers_selector).text
+    profile_pfp_link = driver.find_element(By.CSS_SELECTOR, profile_image_selector).get_attribute("src")
     return GithubUser()
 def get_most_followed(link, num):
     setup(link)
