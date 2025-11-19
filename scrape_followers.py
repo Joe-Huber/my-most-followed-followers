@@ -8,4 +8,4 @@ def scrape_curr_page():
 def get_most_followed(num):
     all_followers = scrape_all_followers()
     all_followers.sort(key=lambda user: user.followers, reverse=True)
-    return 0
+    return all_followers[:num]
