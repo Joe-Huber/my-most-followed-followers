@@ -1,6 +1,8 @@
 import time
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 from xpaths_and_css_selectors import *
 
 from github_user import GithubUser
@@ -12,6 +14,7 @@ def scrape_curr_page():
     return 0
 def scrape_user(user_link):
     driver.get(user_link)
+    name = driver.find_element(By.CSS_SELECTOR, username_selector).text
     return GithubUser()
 def get_most_followed(link, num):
     setup(link)
