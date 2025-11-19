@@ -18,7 +18,7 @@ def scrape_user(user_link):
     followers_text = driver.find_element(By.CSS_SELECTOR, followers_selector).text.lower()
     if 'k' in followers_text:
         followers = int(float(followers_text.replace('k', '')) * 1000)
-    elif 'm' in followers_text:
+    elif 'm' in followers_text: #I don't think this applies to anyone, linus is like 250k, but just in case
         followers = int(float(followers_text.replace('m', '')) * 1000000)
     else:
         followers = int(followers_text.replace(',', ''))
