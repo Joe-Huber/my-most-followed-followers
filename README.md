@@ -7,16 +7,6 @@ To get started, simply change the variables in `main.py` to your username and ho
 
 ### My Most Followed Followers
 <!-- FOLLOWERS_LIST_START -->
-| Profile | Name | Followers |
-|---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
-| <img src='https://avatars.githubusercontent.com/u/202472355?v=4' width='30' height='30'> | [macnmath](https://github.com/macnmath) | 2 |
-| <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
-
 <!-- FOLLOWERS_LIST_END -->
 
 Psst, if you follow me you can show up on here! ^-^
-
-<!-- LAST_UPDATED_START -->
-*Last updated: 2025-11-20 00:52:46 UTC*
-<!-- LAST_UPDATED_END -->

@@ -11,6 +11,8 @@ from xpaths_and_css_selectors import *
 
 from github_user import GithubUser
 
+driver = None # Initialize driver as a global variable
+
 def scrape_all_followers():
     user_links = []
     while True:
@@ -91,3 +93,12 @@ def setup(link):
     driver = webdriver.Chrome(options=options)
     driver.get(link)
     driver.implicitly_wait(1)
+
+def close_driver():
+    """
+    Closes the chrome driver if it's running.
+    """
+    global driver
+    if driver:
+        driver.quit()
+        driver = None # Set to None to indicate it's closed
