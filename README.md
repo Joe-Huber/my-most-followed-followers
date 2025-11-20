@@ -5,7 +5,7 @@ Scrapes through your profile and collects which users are the most followed! ^-^
 ## Getting Started
 To get started, simply change the variables in `main.py` to your username and how many followers you want to get and run the script! :D
 
-### My Most Followed Followers
+
 <!-- FOLLOWERS_LIST_START -->
 <!-- FOLLOWERS_LIST_END -->
 
