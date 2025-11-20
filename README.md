@@ -2,6 +2,10 @@
 
 This GitHub Action scrapes your most followed followers and displays them in a dynamic list on your profile's `README.md`.
 
+<!-- FOLLOWERS_LIST_START -->
+<!-- FOLLOWERS_LIST_END -->
+Psst, if you follow me you can show up on here! ^-^
+
 ## Usage
 
 To use this action in your own repository, follow these steps:
@@ -51,9 +55,7 @@ This action uses a Docker container to run a Python script that:
 - Updates your `README.md` with a dynamically generated table.
 
 ---
-<!-- FOLLOWERS_LIST_START -->
-<!-- FOLLOWERS_LIST_END -->
-Psst, if you follow me you can show up on here! ^-^
+
 
 
 #### Legal Note
