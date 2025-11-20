@@ -32,6 +32,8 @@ To use this action in your own repository, follow these steps:
     jobs:
       update-readme:
         runs-on: ubuntu-latest
+        permissions:
+          contents: write # Required to push changes back to the repository
         steps:
           - name: Check out repository
             uses: actions/checkout@v3
