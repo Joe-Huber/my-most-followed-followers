@@ -3,17 +3,7 @@
 This GitHub Action scrapes your most followed followers and displays them in a dynamic list on your profile's `README.md`.
 
 <!-- FOLLOWERS_LIST_START -->
-### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)
-| Profile | Name | Followers |
-|---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
-| <img src='https://avatars.githubusercontent.com/u/202472355?v=4' width='30' height='30'> | [macnmath](https://github.com/macnmath) | 2 |
-| <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
-
-*Last updated: 2025-11-20 20:15:21 UTC*
 <!-- FOLLOWERS_LIST_END -->
-Psst, if you follow me you can show up on here! ^-^
-
 ## Usage
 
 To use this action in your own repository, follow these steps:
@@ -47,10 +37,18 @@ To use this action in your own repository, follow these steps:
             uses: actions/checkout@v3
 
           - name: Update README with most followed followers
-            uses: Joe-Huber/my-most-followed-followers@v1 # Replace with your repo if you forked
+            uses: Joe-Huber/my-most-followed-followers@main # Or use a specific version like @v1
             with:
               GITHUB_USER_NAME: ${{ github.repository_owner }}
               MAX_FOLLOWER_COUNT: 10 # Optional: specify the number of followers to show
+          
+          - name: Commit and push changes
+            run: |
+              git config --global user.name 'github-actions[bot]'
+              git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+              git add README.md
+              git commit -m "Automated README update" || exit 0
+              git push
     ```
 
     This workflow will run daily, but you can also trigger it manually from the "Actions" tab in your repository.
@@ -64,10 +62,8 @@ This action uses a Docker container to run a Python script that:
 
 ---
 
-
-
 #### Legal Note
-Scraping is allowed in github's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
+Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
     ```
         You may use information from our Service for the following reasons, regardless of whether the information was scraped, collected through our API, or obtained otherwise
     ```
