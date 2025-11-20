@@ -21,7 +21,7 @@ def run_action():
         # Create the markdown table
         now_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
         title = f"### [My Most Famous Followers](https://github.com/{user_name}/my-most-followed-followers)\n"
-        table = f"{title}| Profile | Name | Followers |\n|---|---|---|\n"
+        table = f"{title}\n| Profile | Name | Followers |\n|---|---|---|\n"
         for user in most_followed:
             table += f"| <img src='{user.profile_image_link}' width='30' height='30'> | [{user.name}]({user.link}) | {user.followers} |\n"
         table += f"\n*Last updated: {now_utc} UTC*"
