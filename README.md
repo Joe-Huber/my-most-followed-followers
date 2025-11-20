@@ -4,6 +4,7 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 
 <!-- FOLLOWERS_LIST_START -->
 <!-- FOLLOWERS_LIST_END -->
+Psst, if you follow me you can show up here ^-^
 ## Usage
 
 To use this action in your own repository, follow these steps:
