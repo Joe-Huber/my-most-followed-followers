@@ -18,15 +18,28 @@ def run_action():
         with open(readme_path, "r") as f:
             readme_content = f.read()
 
-        # Create the markdown table
+        # --- Create the markdown content ---
         now_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-        title = f"### [My Most Famous Followers](https://github.com/{user_name}/my-most-followed-followers)\n"
-        table = f"{title}\n| Profile | Name | Followers |\n|---|---|---|\n"
+        
+        # 1. The title
+        title = f"### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)"
+        
+        # 2. The table header
+        table_header = "| Profile | Name | Followers |\n|---|---|---|"
+        
+        # 3. The table rows
+        table_rows = []
         for user in most_followed:
-            table += f"| <img src='{user.profile_image_link}' width='30' height='30'> | [{user.name}]({user.link}) | {user.followers} |\n"
-        table += f"\n*Last updated: {now_utc} UTC*"
+            table_rows.append(f"| <img src='{user.profile_image_link}' width='30' height='30'> | [{user.name}]({user.link}) | {user.followers} |")
+        
+        # 4. The timestamp
+        timestamp = f"\n*Last updated: {now_utc} UTC*"
 
-        # Replace the placeholder in the README
+        # 5. Combine all parts with correct spacing for markdown
+        # A blank line is needed between the title and the table for correct rendering
+        full_content = f"{title}\n\n{table_header}\n" + "\n".join(table_rows) + timestamp
+
+        # --- Replace the placeholder in the README ---
         start_placeholder = "<!-- FOLLOWERS_LIST_START -->"
         end_placeholder = "<!-- FOLLOWERS_LIST_END -->"
         start_index = readme_content.find(start_placeholder)
@@ -35,7 +48,7 @@ def run_action():
         if start_index != -1 and end_index != -1:
             new_readme = (
                 readme_content[:start_index + len(start_placeholder)] +
-                "\n" + table + "\n" +
+                "\n" + full_content + "\n" +
                 readme_content[end_index:]
             )
             with open(readme_path, "w") as f:
