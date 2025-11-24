@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from scrape_followers import get_most_followed, close_driver
+from src.scrape_followers import get_most_followed, close_driver
 
 def run_action():
     # Get inputs from the workflow file, which are passed as environment variables
