@@ -7,7 +7,7 @@ if __name__ == "__main__":
         # Scrape most followed users
         most_followed = get_most_followed(github_followers_link, 5)  # Get top 5
 
-        with open("README.md", "r") as f:
+        with open("../README.md", "r") as f:
             readme_content = f.read()
 
         # Create the markdown table and add the timestamp
@@ -32,7 +32,7 @@ if __name__ == "__main__":
                 readme_content[end_index:]
             )
 
-        with open("README.md", "w") as f:
+        with open("../README.md", "w") as f:
             f.write(readme_content)
             
     finally:
