@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
-from .xpaths_and_css_selectors import *
-from .github_user import GithubUser
+from src.xpaths_and_css_selectors import *
+from src.github_user import GithubUser
 
 driver = None # Initialize driver as a global variable
 
