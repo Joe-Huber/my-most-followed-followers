@@ -1,6 +1,6 @@
 from datetime import datetime
-from scrape_followers import get_most_followed, close_driver
-from main import github_followers_link
+from .scrape_followers import get_most_followed, close_driver
+from .main import github_followers_link
 
 if __name__ == "__main__":
     try:
