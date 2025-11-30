@@ -1,4 +1,6 @@
 from .scrape_followers import get_most_followed
+
+#Use python -m src.main to run this file
 github_username = "Joe-Huber"
 github_followers_link = f"https://github.com/{github_username}?tab=followers"
 top_number = 5
