@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from src.scrape_followers import get_most_followed, close_driver
 
 def run_action():
@@ -19,7 +19,7 @@ def run_action():
             readme_content = f.read()
 
         # --- Create the markdown content ---
-        now_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         
         # 1. The title
         title = f"### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)"
