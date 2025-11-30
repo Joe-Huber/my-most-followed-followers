@@ -13,6 +13,7 @@ from .github_user import GithubUser
 driver = None # Initialize driver as a global variable
 
 def scrape_all_followers():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     user_links = []
     while True:
         user_links.extend(scrape_curr_page())
@@ -35,6 +36,7 @@ def scrape_all_followers():
     return followers_list
 
 def scrape_curr_page():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     user_links = []
     link_elements = driver.find_elements(By.CSS_SELECTOR, "#user-profile-frame > div > div > div.d-table-cell > a")
     for element in link_elements:
@@ -42,6 +44,7 @@ def scrape_curr_page():
     return list(set(user_links))
 
 def next_page_exists():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     try:
         driver.find_element(By.LINK_TEXT, "Next")
         return True
@@ -49,6 +52,7 @@ def next_page_exists():
         return False
 
 def scrape_user(user_link):
+    assert driver is not None, "Driver not initialized. Call setup() first."
     driver.get(user_link)
     while "Too many requests" in driver.page_source:
         print("Rate limit exceeded. Waiting 5 seconds and retrying...")
@@ -83,7 +87,7 @@ def get_most_followed(link, num):
 def setup(link):
     """
     Declares and initializes the chrome driver
-    :param link: the link the Chrome tab opens to
+    :param link: the link the chrome tab opens to
     :return: the chrome driver
     """
     global driver
