@@ -83,7 +83,7 @@ def get_most_followed(link, num):
 def setup(link):
     """
     Declares and initializes the chrome driver
-    :param link: the link the chrome tab opens to
+    :param link: the link the Chrome tab opens to
     :return: the chrome driver
     """
     global driver

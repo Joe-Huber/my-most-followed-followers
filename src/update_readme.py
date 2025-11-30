@@ -10,7 +10,7 @@ if __name__ == "__main__":
         with open("README.md", "r") as f:
             readme_content = f.read()
 
-        # Create the markdown table and add the timestamp
+        # Create the Markdown table and add the timestamp
         now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         title = "### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)\n"
         table = f"{title}| Profile | Name | Followers |\n|---|---|---|\n"
