@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.chrome.options import Options
 
 from .xpaths_and_css_selectors import *
@@ -13,13 +13,14 @@ from .github_user import GithubUser
 driver = None # Initialize driver as a global variable
 
 def scrape_all_followers():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     user_links = []
     while True:
         user_links.extend(scrape_curr_page())
         try:
             # Wait for the "Next" button to be clickable and then click it.
             wait = WebDriverWait(driver, 5)
-            next_button = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Next")))
+            next_button = wait.until(ec.element_to_be_clickable((By.LINK_TEXT, "Next")))
             next_button.click()
             time.sleep(1)  # Wait for the next page to load
         except (NoSuchElementException, TimeoutException):
@@ -35,6 +36,7 @@ def scrape_all_followers():
     return followers_list
 
 def scrape_curr_page():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     user_links = []
     link_elements = driver.find_elements(By.CSS_SELECTOR, "#user-profile-frame > div > div > div.d-table-cell > a")
     for element in link_elements:
@@ -42,6 +44,7 @@ def scrape_curr_page():
     return list(set(user_links))
 
 def next_page_exists():
+    assert driver is not None, "Driver not initialized. Call setup() first."
     try:
         driver.find_element(By.LINK_TEXT, "Next")
         return True
@@ -49,6 +52,7 @@ def next_page_exists():
         return False
 
 def scrape_user(user_link):
+    assert driver is not None, "Driver not initialized. Call setup() first."
     driver.get(user_link)
     while "Too many requests" in driver.page_source:
         print("Rate limit exceeded. Waiting 5 seconds and retrying...")
@@ -58,8 +62,8 @@ def scrape_user(user_link):
 
     try:
         wait = WebDriverWait(driver, 10)
-        name = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, username_selector))).text
-        followers_text = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, followers_selector))).text.lower()
+        name = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, username_selector))).text
+        followers_text = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, followers_selector))).text.lower()
         
         if 'k' in followers_text:
             followers = int(float(followers_text.replace('k', '')) * 1000)
@@ -68,7 +72,7 @@ def scrape_user(user_link):
         else:
             followers = int(followers_text.replace(',', ''))
             
-        profile_image_link = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, profile_image_selector))).get_attribute("src")
+        profile_image_link = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, profile_image_selector))).get_attribute("src")
         return GithubUser(name=name, followers=followers, profile_image_link=profile_image_link, link=user_link)
     except TimeoutException:
         print(f"Failed to load user data for {user_link}. Skipping user.")
