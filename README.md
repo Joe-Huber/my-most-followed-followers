@@ -1,6 +1,7 @@
 # Most Followed Followers GitHub Action
 
 [![Update README Status](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml/badge.svg)](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This GitHub Action scrapes your most followed followers and displays them in a dynamic list on your profile's `README.md`.
 
@@ -70,6 +71,7 @@ This action uses a Docker container to run a Python script that:
 
 #### Legal Note
 Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
+This project is licensed under the MIT License. Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
     ```
         You may use information from our Service for the following reasons, regardless of whether the information was scraped, collected through our API, or obtained otherwise
     ```
