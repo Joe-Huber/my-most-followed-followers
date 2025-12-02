@@ -1,6 +1,9 @@
 # Most Followed Followers GitHub Action
 
 [![Update README Status](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml/badge.svg)](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml)
+[![Issues](https://img.shields.io/github/issues/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers/issues)
+[![Forks](https://img.shields.io/github/forks/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers/network/members)
+[![Stars](https://img.shields.io/github/stars/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This GitHub Action scrapes your most followed followers and displays them in a dynamic list on your profile's `README.md`.
