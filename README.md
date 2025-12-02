@@ -74,7 +74,8 @@ This action uses a Docker container to run a Python script that:
 
 #### Legal Note
 This project is licensed under the MIT License. Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
-Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
+
+Scraping is allowed in GitHub's [TOS](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies): 
     ```
         You may use information from our Service for the following reasons, regardless of whether the information was scraped, collected through our API, or obtained otherwise
     ```
