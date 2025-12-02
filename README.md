@@ -62,6 +62,14 @@ To use this action in your own repository, follow these steps:
     ```
 
     This workflow will run daily, but you can also trigger it manually from the "Actions" tab in your repository.
+## Inputs
+
+The following inputs can be configured in your workflow file's `with` block:
+
+| Input                | Description                                                | Default                        | Required |
+| -------------------- | ---------------------------------------------------------- | ------------------------------ | -------- |
+| `GITHUB_USER_NAME`   | Your GitHub username.                                      | `${{ github.repository_owner }}` | `true`   |
+| `MAX_FOLLOWER_COUNT` | The number of top followers to display in the table.       | `5`                            | `false`  |
 
 ## How It Works
 
