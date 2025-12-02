@@ -80,10 +80,13 @@ This action uses a Docker container to run a Python script that:
 
 ---
 
-#### Legal Note
-This project is licensed under the MIT License. Scraping is allowed in GitHub's TOS: https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies
+## Contributing
 
-Scraping is allowed in GitHub's [TOS](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies): 
-    ```
-        You may use information from our Service for the following reasons, regardless of whether the information was scraped, collected through our API, or obtained otherwise
-    ```
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+#### Legal Note
+Scraping is allowed under GitHub's Terms of Service for the purposes of this action. For more details, see the [GitHub Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies).
