@@ -1,6 +1,7 @@
 # Most Followed Followers GitHub Action
 
 [![Update README Status](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml/badge.svg)](https://github.com/Joe-Huber/my-most-followed-followers/actions/workflows/update_readme.yml)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers/releases)
 [![GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-Most%20Followed%20Followers-blue?logo=github)](https://github.com/marketplace/actions/most-followed-followers)
 [![Top Language](https://img.shields.io/github/languages/top/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers)
 [![Code Size](https://img.shields.io/github/languages/code-size/Joe-Huber/my-most-followed-followers)](https://github.com/Joe-Huber/my-most-followed-followers)
