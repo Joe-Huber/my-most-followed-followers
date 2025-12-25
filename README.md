@@ -17,12 +17,11 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 ### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)
 | Profile | Name | Followers |
 |---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/167337375?v=4' width='30' height='30'> | [wachawo](https://github.com/wachawo) | 2400 |
 | <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
 | <img src='https://avatars.githubusercontent.com/u/202472355?v=4' width='30' height='30'> | [macnmath](https://github.com/macnmath) | 2 |
 | <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
 
-*Last updated: 2025-12-24 00:56:44 UTC*
+*Last updated: 2025-12-25 00:56:47 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
