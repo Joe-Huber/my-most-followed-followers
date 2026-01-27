@@ -21,7 +21,7 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 | <img src='https://avatars.githubusercontent.com/u/202472355?v=4' width='30' height='30'> | [macnmath](https://github.com/macnmath) | 2 |
 | <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
 
-*Last updated: 2026-01-26 01:04:09 UTC*
+*Last updated: 2026-01-27 01:02:44 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
