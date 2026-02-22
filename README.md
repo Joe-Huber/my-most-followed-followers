@@ -18,7 +18,7 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 | Profile | Name | Followers |
 |---|---|---|
 
-*Last updated: 2026-02-21 01:08:06 UTC*
+*Last updated: 2026-02-22 01:13:01 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
