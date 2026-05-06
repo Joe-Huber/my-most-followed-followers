@@ -22,7 +22,7 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 | <img src='https://avatars.githubusercontent.com/u/207912757?v=4' width='30' height='30'> | [hiley-b](https://github.com/hiley-b) | 2 |
 | <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
 
-*Last updated: 2026-05-05 01:52:42 UTC*
+*Last updated: 2026-05-06 01:51:31 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
