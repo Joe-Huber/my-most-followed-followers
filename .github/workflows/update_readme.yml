@@ -32,5 +32,5 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Automated README update" || exit 0
+          git commit -m "bot: automated follower list README update" || exit 0
           git push

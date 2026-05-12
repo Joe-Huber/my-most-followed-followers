@@ -72,7 +72,7 @@ To use this action in your own repository, follow these steps:
               git config --global user.name 'github-actions[bot]'
               git config --global user.email 'github-actions[bot]@users.noreply.github.com'
               git add README.md
-              git commit -m "Automated README update" || exit 0
+              git commit -m "bot: automated follower list README update" || exit 0
               git push
     ```
 
