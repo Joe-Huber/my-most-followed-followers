@@ -17,13 +17,13 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 ### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)
 | Profile | Name | Followers |
 |---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/39780?v=4' width='30' height='30'> | [WildGenie](https://github.com/WildGenie) | 822 |
+| <img src='https://avatars.githubusercontent.com/u/39780?v=4' width='30' height='30'> | [WildGenie](https://github.com/WildGenie) | 824 |
 | <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
-| <img src='https://avatars.githubusercontent.com/u/207912757?v=4' width='30' height='30'> | [hiley-b](https://github.com/hiley-b) | 2 |
 | <img src='https://avatars.githubusercontent.com/u/202472355?v=4' width='30' height='30'> | [macnmath](https://github.com/macnmath) | 2 |
+| <img src='https://avatars.githubusercontent.com/u/207912757?v=4' width='30' height='30'> | [hiley-b](https://github.com/hiley-b) | 2 |
 | <img src='https://avatars.githubusercontent.com/u/148095806?v=4' width='30' height='30'> | [KadenXu5001](https://github.com/KadenXu5001) | 1 |
 
-*Last updated: 2026-05-27 02:15:41 UTC*
+*Last updated: 2026-05-28 02:01:12 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
