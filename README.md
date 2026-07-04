@@ -65,7 +65,7 @@ To use this action in your own repository, follow these steps:
             uses: Joe-Huber/my-most-followed-followers@main
             with:
               GITHUB_USER_NAME: ${{ github.repository_owner }}
-              MAX_FOLLOWER_COUNT: 10
+              MAX_FOLLOWER_COUNT: 5
           
           - name: Commit and push changes
             run: |
