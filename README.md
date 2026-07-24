@@ -22,12 +22,12 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 | Profile | Name | Followers |
 |---|---|---|
 | <img src='https://avatars.githubusercontent.com/u/39780?v=4' width='30' height='30'> | [WildGenie](https://github.com/WildGenie) | 846 |
-| <img src='https://avatars.githubusercontent.com/u/155298917?v=4' width='30' height='30'> | [nayeem-miah](https://github.com/nayeem-miah) | 659 |
+| <img src='https://avatars.githubusercontent.com/u/155298917?v=4' width='30' height='30'> | [nayeem-miah](https://github.com/nayeem-miah) | 681 |
 | <img src='https://avatars.githubusercontent.com/u/138178621?v=4' width='30' height='30'> | [itszubariel](https://github.com/itszubariel) | 13 |
 | <img src='https://avatars.githubusercontent.com/u/60829394?v=4' width='30' height='30'> | [Atri7](https://github.com/Atri7) | 12 |
 | <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
 
-*Last updated: 2026-07-23 01:48:50 UTC*
+*Last updated: 2026-07-24 01:44:52 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
