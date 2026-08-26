@@ -21,13 +21,13 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 ### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)
 | Profile | Name | Followers |
 |---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/295484252?v=4' width='30' height='30'> | [webbrain-one](https://github.com/webbrain-one) | 1200 |
+| <img src='https://avatars.githubusercontent.com/u/295484252?v=4' width='30' height='30'> | [webbrain-one](https://github.com/webbrain-one) | 1300 |
 | <img src='https://avatars.githubusercontent.com/u/39780?v=4' width='30' height='30'> | [WildGenie](https://github.com/WildGenie) | 853 |
 | <img src='https://avatars.githubusercontent.com/u/138178621?v=4' width='30' height='30'> | [itszubariel](https://github.com/itszubariel) | 13 |
 | <img src='https://avatars.githubusercontent.com/u/60829394?v=4' width='30' height='30'> | [Atri7](https://github.com/Atri7) | 12 |
 | <img src='https://avatars.githubusercontent.com/u/44704454?v=4' width='30' height='30'> | [AwesomeCoder412412](https://github.com/AwesomeCoder412412) | 9 |
 
-*Last updated: 2026-08-25 00:38:19 UTC*
+*Last updated: 2026-08-26 00:39:26 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
