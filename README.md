@@ -21,13 +21,13 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 ### [My Most Famous Followers](https://github.com/Joe-Huber/my-most-followed-followers)
 | Profile | Name | Followers |
 |---|---|---|
-| <img src='https://avatars.githubusercontent.com/u/43516554?v=4' width='30' height='30'> | [standardgalactic](https://github.com/standardgalactic) | 29500 |
-| <img src='https://avatars.githubusercontent.com/u/307791440?v=4' width='30' height='30'> | [shinobi-coder701](https://github.com/shinobi-coder701) | 3800 |
+| <img src='https://avatars.githubusercontent.com/u/43516554?v=4' width='30' height='30'> | [standardgalactic](https://github.com/standardgalactic) | 29600 |
+| <img src='https://avatars.githubusercontent.com/u/307791440?v=4' width='30' height='30'> | [shinobi-coder701](https://github.com/shinobi-coder701) | 3900 |
 | <img src='https://avatars.githubusercontent.com/u/39780?v=4' width='30' height='30'> | [WildGenie](https://github.com/WildGenie) | 859 |
 | <img src='https://avatars.githubusercontent.com/u/138178621?v=4' width='30' height='30'> | [itszubariel](https://github.com/itszubariel) | 14 |
 | <img src='https://avatars.githubusercontent.com/u/60829394?v=4' width='30' height='30'> | [Atri7](https://github.com/Atri7) | 13 |
 
-*Last updated: 2026-10-03 02:51:16 UTC*
+*Last updated: 2026-10-04 03:20:03 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
