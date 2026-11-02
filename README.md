@@ -27,7 +27,7 @@ This GitHub Action scrapes your most followed followers and displays them in a d
 | <img src='https://avatars.githubusercontent.com/u/138178621?v=4' width='30' height='30'> | [itszubariel](https://github.com/itszubariel) | 14 |
 | <img src='https://avatars.githubusercontent.com/u/60829394?v=4' width='30' height='30'> | [Atri7](https://github.com/Atri7) | 13 |
 
-*Last updated: 2026-11-01 03:07:50 UTC*
+*Last updated: 2026-11-02 03:18:09 UTC*
 <!-- FOLLOWERS_LIST_END -->
 Psst, if you follow me you can end up on here! ^-^
 
